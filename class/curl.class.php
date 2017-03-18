@@ -55,7 +55,7 @@ class cURL
                      $RepData[] = array(
                                    "Name" => $post->children(0)->first_child()->first_child()->innertext,
                                    "Link" => 'https://github.com'.$Link['href'],
-                                   "Desc" => $post->children(1)->first_child()->outertext,
+                                   "Desc" => $post->children(1)->first_child()->innertext,
                                    //"CodeLang" => $post->children(2)->second_child()->outertext,
                                    "LastUpdate" => $post->children(2)->last_child()->outertext);
               }
